@@ -140,8 +140,8 @@ fetch('https://striveschool-api.herokuapp.com/api/deezer/search?q=eminem')
             for(let i = 0; i < 5; i++) {
                 let colNode = document.createElement('div')
                 colNode.classList.add('col')
-                let cardNode = document.createElement('div')
-                cardNode.innerHTML =
+              
+                colNode.innerHTML =
                                 `
                                 <div class="card mb-3">
                                     <div class="row no-gutters row-remove-margin row-remove-margin">
@@ -160,7 +160,7 @@ fetch('https://striveschool-api.herokuapp.com/api/deezer/search?q=eminem')
                                 </div>
                                 `
                 rowNode.appendChild(colNode)
-                colNode.appendChild(cardNode)
+              
                 
             }
     })
